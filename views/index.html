@@ -2,11 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css"
+         href="https://fonts.googleapis.com/css?family=Indie+Flower">
+   <link rel="stylesheet" type="text/css"
+         href="https://fonts.googleapis.com/css?family=Open+Sans">
+
     <title>Notes App</title>
   </head>
 
   <body>
-    <h1>HELLO TESTICLES</h1>
+    <section id="contentContainer">
+
+      <header id="header">
+        <h1>Title of page</h1>
+      </header>
+
+      <section id="allNotes">
+        <h1>All notes</h1>
+        <ul id="notesList">
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+        </ul>
+      </section>
+
+      <section id="showOneNote">
+        <h1>show note</h1>
+      </section>
+
+
+
+      <section id="createNote">
+
+        <section id="writeYourNote">
+          <p>Write your note below</p>
+        </section>
+
+        <form class="" action="index.html" method="post">
+
+          <section>
+            <section id="createNoteTitle">
+            <p>Title</p>
+            </section>
+            <section id="createNoteTitleInput">
+            <input id="noteName" type="text" name="noteTitle" placeholder="Title of your note">
+            </section>
+          </section>
+
+        <section>
+          <section>
+            <p>Content</p>
+          </section>
+          <section>
+            <input id= "noteContents"type="text" name="noteContents" placeholder="Write your note here">
+            <button id="createNoteButton" type="submit" name="createNote">Create</button>
+          </section>
+        </section>
+
+        </form>
+      </section>
+
+    </section>
   </body>
 </html>
