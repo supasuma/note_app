@@ -1,0 +1,56 @@
+
+body {
+  font-family: "Open Sans"
+}
+
+#contentContainer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  background-color: lightblue;
+  margin-top: 5em;
+}
+
+#allNotes {
+  background-color: lightblue;
+}
+
+#notesList {
+  list-style-type: none;
+}
+
+#showOneNote {
+  background-color: lightblue;
+  font-family: "Indie Flower"
+}
+
+#writeYourNote {
+
+}
+
+#createNote {
+  background-color: lightblue;
+}
+
+#createNoteButton {
+
+}
+
+#createNoteTitle {
+  width:20%;
+}
+
+#createNoteTitleInput {
+  margin-left: 30%;
+}
+
+#noteName {
+  width: 70%;
+}
+
+#noteContents {
+  height: 5em;
+  width: 70%;
+}
