@@ -1,15 +1,19 @@
 
 body {
-  font-family: "Open Sans"
+  font-family: "Open Sans";
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 #contentContainer {
   width: 960px;
   margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
 }
 
 #header {
-  background-color: lightblue;
   margin-top: 5em;
 }
 
@@ -26,28 +30,18 @@ body {
   font-family: "Indie Flower"
 }
 
-#writeYourNote {
-
-}
-
 #createNote {
   background-color: lightblue;
 }
 
-#createNoteButton {
-
+#sectionLabel {
+  width: 20%;
+  float: left;
 }
 
-#createNoteTitle {
-  width:20%;
-}
-
-#createNoteTitleInput {
-  margin-left: 30%;
-}
-
-#noteName {
-  width: 70%;
+#sectionInput {
+  width: 80%;
+  float: left;
 }
 
 #noteContents {
