@@ -2,12 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title"> -->
     <link rel="stylesheet" type="text/css"
          href="https://fonts.googleapis.com/css?family=Indie+Flower">
    <link rel="stylesheet" type="text/css"
          href="https://fonts.googleapis.com/css?family=Open+Sans">
-
+        <script>
+        window.addEventListener("message", function(event) {
+          event.source.postMessage(window.document.body.innerHTML, '*');
+          window.close();
+        }, false );
+        </script>
     <title>Notes App</title>
   </head>
 
