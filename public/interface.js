@@ -5,11 +5,15 @@ function CreateNewNote() {
  notepad.createNote(document.getElementById('noteName').value, document.getElementById('noteContents').value);
  document.getElementById('noteName').value = "";
  document.getElementById('noteContents').value = "";
- makeUL(notepad.notes);
+ updateList();
+ }
 
- document.getElementById('allNotes').appendChild(makeUL(notepad.preview()))
+ function updateList(){
+   document.getElementById('allNotes').innerHTML = "";
+   document.getElementById('allNotes').appendChild(makeUL(notepad.preview()));
 
-}
+   }
+
 
 function makeUL(array) {
     // Create the list element:
