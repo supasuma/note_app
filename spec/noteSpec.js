@@ -2,6 +2,7 @@ describe("Note", function(){
 
   beforeEach(function(){
     note = new Note("testicles", "testing to the maxicles");
+    return "done!";
   });
 
   it("should have a title", function(){
@@ -16,5 +17,5 @@ describe("Note", function(){
     expect(equal(note.preview(), "testing to the maxic"));
   });
 
-  
+
 });

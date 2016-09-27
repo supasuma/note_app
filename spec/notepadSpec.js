@@ -4,6 +4,7 @@ describe("Notepad", function(){
     notepad = new Notepad(NoteStub);
     notepad.createNote("testicles", "testing to the maxiclesness");
     notepad.createNote("testies", "testing to the maxiclesness");
+    return "done!"
   });
 
   it("can create new note", function(){
