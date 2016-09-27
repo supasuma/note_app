@@ -1,7 +1,7 @@
 describe("Notepad", function(){
 
   beforeEach(function(){
-    notepad = new Notepad(Note);
+    notepad = new Notepad(NoteStub);
     notepad.createNote("testicles", "testing to the maxicles");
     notepad.createNote("testies", "testing to the maxies");
   });
@@ -11,8 +11,6 @@ describe("Notepad", function(){
   });
 
   it("shows preview of all notes", function(){
-    expect(equal(notepad.preview(), ["testing to the maxic", "testing to the maxie"]));
+    expect(equal(notepad.preview(), ["testing to the maxic", "testing to the maxic"]));
   });
-
-
 });
