@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title">
+    <!-- <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title"> -->
     <link rel="stylesheet" type="text/css"
          href="https://fonts.googleapis.com/css?family=Indie+Flower">
+
    <link rel="stylesheet" type="text/css"
          href="https://fonts.googleapis.com/css?family=Open+Sans">
 
@@ -52,9 +53,13 @@
           <section id="sectionInput">
             <input id= "noteContents" type="text" name="noteContents" placeholder="Write your note here">
           </section>
-            <button id="createNoteButton" type="submit" name="createNote">Create</button>
+            <button id="createNoteButton" type="button" onclick="CreateNewNote();" name="createNote">Create</button>
         </form>
       </section>
+      <script src="../src/note.js"></script>
+      <script src="../src/notepad.js"></script>
+      <script src="../public/interface.js"></script>
+
 
     </section>
   </body>
