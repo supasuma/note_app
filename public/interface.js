@@ -13,7 +13,11 @@ function CreateNewNote() {
    document.getElementById('allNotes').appendChild(makeUL(notepad.preview()));
 
    }
-
+function createChild(element, content){
+    var createdElement = document.createElement(element);
+    createdElement.appendChild(document.createTextNode(content));
+    return createdElement;
+}
 
 function makeUL(array) {
     var list = document.createElement('ul');
@@ -35,10 +39,6 @@ function showHide(event){
         showNote.innerHTML = '<h1 id="showNote">show note</h1>';
         showNote.style.display = "inline";
         var note = notepad.notes[event.target.id];
-        var title = document.createElement('h3');
-        title.appendChild(document.createTextNode(note.title));
-        showNote.appendChild(title);
-        var content = document.createElement('p');
-        content.appendChild(document.createTextNode(note.content));
-        showNote.appendChild(content);
+        showNote.appendChild(createChild('h3', note.title));
+        showNote.appendChild(createChild('p', note.content));
 }

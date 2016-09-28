@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title">
-    <link rel="stylesheet" type="text/css"
-         href="https://fonts.googleapis.com/css?family=Indie+Flower">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/styles.css" media="screen" title="no title">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Indie+Flower">
 
-   <link rel="stylesheet" type="text/css"
-         href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Open+Sans">
 
-    <title>Notes App</title>
-  </head>
+  <title>Notes App</title>
+</head>
 
-  <body>
-    <section id="contentContainer">
+<body>
+  <section id="contentContainer">
 
-      <header id="header">
-        <h1>Our Single-Page-Pure-JS Amazing Notes App</h1>
-        <hr>
-      </header>
+    <header id="header">
+      <h1>Our Single-Page-Pure-JS Amazing Notes App</h1>
+      <hr>
+    </header>
 
-      <section id="allNotes">
-        <h1>All notes</h1>
-        <ul id="notesList">
-        </ul>
-      </section>
+    <section id="allNotes">
+      <h1>All notes</h1>
+      <ul id="notesList">
+      </ul>
+    </section>
 
-      <section id="showOneNote" style="display: none;">
-        <h1 id="showNote">show note</h1>
-        <p id="showNoteBody"></p>
-      </section>
+    <section id="showOneNote" style="display: none;">
+    </section>
 
-      <section id="createNote">
-
-        <section id="writeYourNote">
-          <p>Write your note below</p>
-        </section>
-
-        <form class="" action="index.html" method="post">
-          <section id="sectionLabel">
-          <p>Title</p>
-          </section>
-          <section id="sectionInput">
+    <section id="createNote">
+      <p>Write your note below</p>
+        <div id="divLabel">
+          <label for="noteName">Title</label>
           <input id="noteName" type="text" name="noteTitle" placeholder="Title of your note">
-          </section>
+        </div>
 
-          <section id="sectionLabel">
-            <p>Content</p>
-          </section>
-          <section id="sectionInput">
-            <input id= "noteContents" type="text" name="noteContents" placeholder="Write your note here">
-          </section>
-            <button id="createNoteButton" type="button" onclick="CreateNewNote();" name="createNote">Create</button>
-        </form>
-      </section>
-      <script src="../src/note.js"></script>
-      <script src="../src/notepad.js"></script>
-      <script src="../public/interface.js"></script>
-
+        <div id="divLabel">
+          <label for="noteContents">Contents</label>
+          <input id= "noteContents" type="text" name="noteContents" placeholder="Write your note here">
+          <button id="createNoteButton" type="button" onclick="CreateNewNote();" name="createNote">Create</button>
+        </div>
 
     </section>
-  </body>
+    <script src="../src/note.js"></script>
+    <script src="../src/notepad.js"></script>
+    <script src="../public/interface.js"></script>
+
+
+  </section>
+</body>
 </html>
