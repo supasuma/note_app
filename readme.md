@@ -8,4 +8,4 @@ From the command line:
 
 In your browser:
 - To see the working app - Head to localhost:3000/
-- To view the testing - Head to localhost:3000/specHelper.html
+- To view the testing - Head to localhost:3000/spec/specRunner.html
