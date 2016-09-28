@@ -16,28 +16,29 @@ function CreateNewNote() {
 
 
 function makeUL(array) {
-    // Create the list element:
     var list = document.createElement('ul');
 
     for(var i = 0; i < notepad.notes.length; i++) {
-        // Create the list item:
         var item = document.createElement('li');
-        // document.createElement('a');
-        // Set its contents:
         var link = item.appendChild(document.createElement('a'));
-        link.setAttribute("href", i);
+        link.setAttribute("id", i);
+        link.setAttribute("href", '#showOneNote');
         link.appendChild(document.createTextNode(array[i]));
-        // Add it to the list:
+        link.addEventListener("click", showHide);
         list.appendChild(item);
     }
-
-    // Finally, return the constructed list:
     return list;
 }
 
-function showHide(){
+function showHide(event){
       var showNote = document.getElementById('showOneNote');
-      showNote.onclick = function(){
-        showNote.style.display = "none";
-      };
+        showNote.innerHTML = '<h1 id="showNote">show note</h1>';
+        showNote.style.display = "inline";
+        var note = notepad.notes[event.target.id];
+        var title = document.createElement('h3');
+        title.appendChild(document.createTextNode(note.title));
+        showNote.appendChild(title);
+        var content = document.createElement('p');
+        content.appendChild(document.createTextNode(note.content));
+        showNote.appendChild(content);
 }
